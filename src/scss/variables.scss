@@ -1,38 +1,38 @@
-/**/$container-xl:              1140px;
-/**/$container-xxl:             1320px;
-/**/$container-xxxl:            1640px;
+$container-xl:              1140px;
+$container-xxl:             1320px;
+$container-xxxl:            1460px;
 $body_bg_color:             #1C1B1B;
-/**/$btn_bg_color:              #ED352F;
-/**/$btn_bg_color_hover:        #278770;
-/**/$btn_bg_color_active:       #00C293;
+$btn_bg_color:              #F399B3;
+$btn_bg_color_hover:        #E4829F;
+$btn_bg_color_active:       #DE4672;
 /**/$bg_dark_1:                 #36BD9C; //unuse
 /**/$bg_light_1:                #00C293;
 /**/$bg_light_2:                #FFF;
 /**/$bg_light_3:                #36BD9C;
-/**/$font_color:                #FFF;
-/**/$font_color2:               #424242;
-/**/$font_color3:               #878989;
+$font_color:                #C1A193;
+$font_color2:               #C3A094;
+$font_color3:               #111112;
 /**/$font_color4:               #98A5B9;
 $font_family:               "Montserrat", sans-serif;
-/**/$font_weight:               300;
-/**/$font_size:                 16px;
-/**/$font_size_mobile:          15px;
-/**/$body_mb:                   120px;
-/**/$body_mb_lg:                120px;
-/**/$body_mb_xs:                69px;
+$font_weight:               400;
+$font_size:                 18px;
+$font_size_mobile:          14px;
+$body_mb:                   150px;
+$body_mb_lg:                150px;
+$body_mb_xs:                80px;
 $font_family2:              "TenorSans", sans-serif;
 /**/$link_txt_family:           $font_family;
-/**/$link_color:                $font_color;
-/**/$link_hover_color:          #278770;
-/**/$link_active_color:         #00C293;
+$link_color:                $font_color;
+$link_hover_color:          $btn_bg_color;
+$link_active_color:         $btn_bg_color_active;
 /**/$link_hover_color1:         #bd7667; //unuse
 /**/$link_hover_color2:         $link_hover_color; //unuse
-/**/$footer_height:             120px;
-/**/$footer_height_lg:          120px;
-/**/$footer_height_xs:          180px;
-/**/$footer_text_color:         $link_color;
-/**/$footer_text_color_hover:   $link_hover_color;
-/**/$footer_text_color_active:  $link_active_color;
+$footer_height:             220px;
+$footer_height_lg:          220px;
+$footer_height_xs:          220px;
+$footer_text_color:         $link_color;
+$footer_text_color_hover:   $link_hover_color;
+$footer_text_color_active:  $link_active_color;
 
 //Form
 /**/$input_bg:                  $bg_light_2;
