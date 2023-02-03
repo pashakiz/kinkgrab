@@ -1,0 +1,50 @@
+/* font-family: "Montserrat"; */
+/* font-family: "TenorSans"; */
+
+@font-face {
+  font-family: 'TenorSans';
+  src: url('../fonts/TenorSans/TenorSans-Regular.eot');
+  src: url('../fonts/TenorSans/TenorSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TenorSans/TenorSans-Regular.woff2') format('woff2'),
+  url('../fonts/TenorSans/TenorSans-Regular.woff') format('woff'),
+  url('../fonts/TenorSans/TenorSans-Regular.otf') format('opentype'),
+  url('../fonts/TenorSans/TenorSans-Regular.svg#TenorSans-Regular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+  url('../fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Italic.eot');
+  src: url('../fonts/Montserrat/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat/Montserrat-Italic.woff2') format('woff2'),
+  url('../fonts/Montserrat/Montserrat-Italic.woff') format('woff'),
+  url('../fonts/Montserrat/Montserrat-Italic.ttf') format('truetype'),
+  url('../fonts/Montserrat/Montserrat-Italic.svg#Montserrat-Italic') format('svg');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+  src: url('../fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
+  url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff'),
+  url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+  url('../fonts/Montserrat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+  font-style: normal;
+  font-weight: 500;
+}
