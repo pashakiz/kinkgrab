@@ -1,0 +1,81 @@
+/*
+* Autor: Pavel Kizernis (pashakiz@gmail.com)
+* https://github.com/pashakiz/countdown.js
+*/
+
+.clockface {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1;
+	color: $font_color2;
+  background-color: $bg_light_2;
+  @media (min-width: 992px) {
+    font-size: 45px;
+    padding: 10px 0;
+  }
+  @media (min-width: 1400px) {
+    padding: 38px 0;
+  }
+}
+
+.clockface-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 53px;
+  @media (min-width: 992px) {
+    width: 64px;
+    letter-spacing: 6px;
+  }
+
+  &.clockface-item_days {
+    display: none;
+    + .clockface__separator {
+      display: none;
+    }
+  }
+
+  &.clockface-item_hours {
+    display: none;
+    + .clockface__separator {
+      display: none;
+    }
+  }
+
+}
+
+.clockface-item_mins {
+  justify-content: flex-end;
+}
+.clockface-item_seconds {
+  justify-content: flex-start;
+}
+
+.clockface__separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  @media (min-width: 992px) {
+    height: 56px;
+    margin: 0 5px;
+  }
+  &::after {
+    content: ':';
+    height: 42px;
+    @media (min-width: 992px) {
+      height: 56px;
+    }
+  }
+}
+
+.clockface__title {
+	font-size: 16px;
+	line-height: 1;
+	color: #777;
+	margin-top: 8px;
+}

@@ -1,0 +1,258 @@
+.userprofile {
+  position: relative;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.userprofile__photo {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  @media (min-width: 400px) {
+    max-width: 320px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 380px;
+    margin: 0;
+  }
+}
+
+.userprofile-img {
+  width: 100%;
+  max-width: 100%;
+  height: 445px;
+  max-height: 445px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  @media (min-width: 400px) {
+    max-width: 320px;
+    height: 445px;
+    max-height: 445px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 380px;
+    max-height: 448px;
+    height: 448px;
+  }
+}
+
+
+.userprofile__btn {
+  @media (min-width: 992px) {}
+}
+
+.userprofile__info {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 400px) {
+    max-width: 320px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 470px;
+    max-height: 448px;
+    margin: 0;
+  }
+}
+
+.userprofile__data {
+  padding: 21px 20px 40px;
+  background-color: $btn_bg_color_hover;
+  @media (min-width: 1200px) {
+    padding: 46px 40px 35px;
+  }
+}
+
+.userprofile__row {
+  color: $font_color;
+  font-family: $font_family;
+  line-height: 1;
+  margin-bottom: 31px;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 44px;
+  }
+}
+
+.userprofile__name {
+  font-family: $font_family;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  @include overflow-ellipsis;
+  @media (min-width: 1200px) {
+    font-size: 32px;
+    margin: 0 0 30px 0;
+  }
+}
+
+.userprofile__sep {
+  @media (min-width: 1200px) {
+    width: 8px;
+    height: 8px;
+    background-color: $body_bg_color;
+    margin: 0 16px;
+  }
+}
+
+.userprofile__loc {
+  font-family: $font_family;
+  font-weight: 300;
+  font-size: 13px;
+  @include overflow-ellipsis;
+  @media (min-width: 1200px) {
+    font-size: 19px;
+  }
+}
+
+.compatibility {
+  &.compatibility_mb {
+    padding-bottom: 76px;
+    @media (min-width: 1200px) {
+      padding-bottom: 54px;
+    }
+  }
+  .compatibility__progress {
+    &.progress {
+      border-radius: 0;
+      background-color: $btn_bg_color_hover;
+      border: 1px solid $btn_bg_color_active;
+      width: 80px;
+      height: 30px;
+      position: relative;
+      @media (min-width: 1200px) {
+        width: 110px;
+        height: 45px;
+      }
+      .progress-bar {
+        color: $font_color;
+        font-weight: 500;
+        font-size: 17px;
+        background-color: $btn_bg_color_active;
+        @media (min-width: 1200px) {
+          font-size: 22px;
+        }
+        .progress-title {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 1px;
+          @media (min-width: 1200px) {
+            top: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .compatibility__title {
+    font-family: $font_family;
+    color: $font_color;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    @media (min-width: $user_list_item_breakpoint) {
+      text-align: left;
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &.compatibility_list {
+    .compatibility__progress {
+      &.progress {
+        width: 34px;
+        height: 17px;
+        @media (min-width: $user_list_item_breakpoint) {
+          width: 70px;
+          height: 29px;
+        }
+        .progress-bar {
+          font-size: 9px;
+          @media (min-width: $user_list_item_breakpoint) {
+            font-size: 16px;
+          }
+          .progress-title {
+            top: 1px;
+            @media (min-width: $user_list_item_breakpoint) {
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+    .compatibility__title {
+      font-size: 7px;
+      margin-bottom: 9px;
+      @media (min-width: $user_list_item_breakpoint) {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &.compatibility_login {}
+}
+
+.user-profile-title {
+  font-family: $font_family;
+  color: $font_color;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  @include overflow-ellipsis;
+  @media (min-width: 992px) {}
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    margin-bottom: 41px;
+    text-align: left;
+  }
+  &.user-profile-title_about {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      margin-bottom: 19px;
+    }
+  }
+}
+
+.user-profile-about {
+  text-align: center;
+  color: $font_color;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  position: relative;
+  padding: 40px 20px 0;
+  background-color: $body_bg_color;
+  margin: 0 auto;
+  @media (min-width: 400px) {
+    max-width: 320px;
+  }
+  @media (min-width: 1200px) {
+    text-align: left;
+    max-width: 100%;
+    padding: 40px 0 0;
+  }
+  p {
+    line-height: 24px;
+    @media (min-width: 992px) {
+      line-height: 24px;
+    }
+  }
+}
