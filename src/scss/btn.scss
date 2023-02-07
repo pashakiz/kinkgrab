@@ -82,34 +82,34 @@
   }
 
   &.btn_3 { //change photo
-    width: 220px;
-    height: 56px;
+    width: 182px;
+    height: 38px;
     padding: 5px 5px;
     border-radius: 0;
-    font-family: $font_family;
-    font-weight: 300;
-    font-size: 18px;
-    background-color: $bg_light_2;
-    color: $font_color2;
+    font-family: $font_family2;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: rgba($btn_bg_color, .7);
+    color: $font_color3;
     text-transform: uppercase;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     &:hover {
-      background-color: $btn_bg_color_hover;
-      color: $font_color2 !important;
+      background-color: rgba($btn_bg_color_hover, .7);
+      color: $font_color3 !important;
     }
     &:active {
-      background-color: $btn_bg_color !important;
-      color: $font_color !important;
+      background-color: rgba($btn_bg_color_active, .7) !important;
+      color: $font_color3 !important;
     }
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {
-      font-size: 22px;
+      font-size: 18px;
       padding: 15px 15px;
-      width: 270px;
-      height: 70px;
+      width: 225px;
+      height: 46px;
     }
   }
 

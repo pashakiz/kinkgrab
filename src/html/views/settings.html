@@ -3,22 +3,26 @@
     <div class="container container_settings">
       <form action="">
         <div class="row">
-          <div class="col-12 col-xl-5">
+          <div class="col-12 col-xl-5 order-xl-2">
             <div class="settings-photo">
-              <div class="profile-photo">
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-area d-flex align-items-center justify-content-center" for="customFile">
-                    <span class="btn btn_3">Change Avatar</span>
-                  </label>
+              <div class="profile-photo-wrap">
+                <div class="profile-photo">
+                  <div class="profile-photo-img"></div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-area d-flex align-items-center justify-content-center" for="customFile">
+                      <span class="btn btn_3">Change Avatar</span>
+                    </label>
+                  </div>
                 </div>
+                <div class="profile-photo-bg"></div>
               </div>
               <div class="text-center">
                 <a href="#" class="link2 d-none d-xl-inline-block">Sign Out</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-7">
+          <div class="col-12 col-xl-7 order-xl-1">
             <div class="settings-form">
               <div class="form-group form-group_input">
                 <input class="form-control" type="text" placeholder="Age">
@@ -56,11 +60,15 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn_w100 settings__btn">Save Preferences</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn btn_w100 settings__btn">Save Preferences</button>
               <div class="text-center">
                 <a href="#" class="link2 d-xl-none">Sign Out</a>
               </div>
-            </div>
           </div>
         </div>
       </form>

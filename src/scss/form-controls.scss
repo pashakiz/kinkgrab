@@ -15,11 +15,6 @@
   opacity: 1;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {}
-body input:required:valid,
-body textarea:required:valid {}
-
 .form-control {
   border: $input_border;
   background-color: $input_bg;
@@ -29,7 +24,7 @@ body textarea:required:valid {}
   font-family: $input_txt_family;
   font-size: $input_txt_xs_size;
   line-height: $input_txt_xs_lh;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   &:hover {
     background-color: $input_hover_bg;
@@ -40,6 +35,7 @@ body textarea:required:valid {}
     background-color: $input_hover_bg;
     color: $input_hover_txt_color;
     border-color: $btn_bg_color;
+    outline: 1px solid $btn_bg_color;
   }
   &::placeholder {
     color: $input_placeholder_color;
@@ -67,46 +63,47 @@ body textarea:required:valid {}
 }
 
 input.form-control {
-  height: 56px;
+  height: 50px;
   @media (min-width: 992px) {
-    height: 70px;
+    height: 62px;
   }
   @media (min-width: 1200px) {
-    height: 70px;
+    height: 62px;
   }
   &.form-control_login {
-    height: 56px;
+    height: 50px;
     @media (min-width: 1200px) {
-      height: 70px;
+      height: 65px;
     }
     @media (min-width: 1500px) {
-      height: 70px;
+      height: 65px;
     }
   }
 }
 
 textarea.form-control {
   border-radius: $textarea_border_radius_mob;
-  min-height: 113px;
+  min-height: 120px;
   @media (min-width: 768px) {
-    height: 130px;
+    height: 120px;
   }
   @media (min-width: 1200px) {
     border-radius: $textarea_border_radius;
-    height: 156px;
+    height: 115px;
   }
 }
 
 .custom-file {
   display: block;
-  width: 220px;
+  width: 182px;
   height: auto;
   position: relative;
+  transform: rotate(-12deg);
   @media (min-width: 768px) {
-    width: 220px;
+    width: 182px;
   }
   @media (min-width: 1200px) {
-    width: 270px;
+    width: 225px;
   }
 
   .custom-file-input {

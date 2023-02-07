@@ -1,20 +1,24 @@
 //checkbox
 $cc_font_color: $font_color2;
-$cc_icon_color: $btn_bg_color_active;
-$cc_font_size_mob: 16px;
-$cc_font_size: 22px;
+$cc_font_size_mob: 14px;
+$cc_font_size: 20px;
 
-$cc_icon_width_mob: 29px;
-$cc_icon_height_mob: 29px;
-$cc_icon_width: 33px;
-$cc_icon_height: 33px;
-$cc_icon_right_mob: 21px;
-$cc_icon_right: 24px;
+$cc_icon_color: $bg_dark_1;
+$cc_icon_width_mob: 40px;
+$cc_icon_height_mob: 40px;
+$cc_icon_width: 36px;
+$cc_icon_height: 36px;
+$cc_icon_right_mob: 17px;
+$cc_icon_right: 15px;
+$cc_icon_bradius: 100%;
+$cc_icon_border: none;
 
-$cc_mark_width_mob: 29px;
-$cc_mark_height_mob: 29px;
-$cc_mark_width: 33px;
-$cc_mark_height: 33px;
+$cc_mark_color: $btn_bg_color;
+$cc_mark_width_mob: 18px;
+$cc_mark_height_mob: 18px;
+$cc_mark_width: 20px;
+$cc_mark_height: 20px;
+$cc_mark_bradius: 100%;
 
 //switcher
 $cs_font_color: $font_color2;
@@ -41,10 +45,10 @@ $cs_mark_color_off: $bg_dark_2;
 $cs_mark_color_on: $btn_bg_color;
 
 //switcher inline
-$csi_font_size_mob: 14px;
-$csi_font_size: 22px;
-$csi_icon_right_mob: 23px;
-$csi_icon_right: 23px;
+$csi_font_size_mob: 12px;
+$csi_font_size: 20px;
+$csi_icon_right_mob: 16px;
+$csi_icon_right: 28px;
 
 .customcheck {
   display: block;
@@ -74,8 +78,9 @@ $csi_icon_right: 23px;
       height: $cc_icon_height_mob;
       width: $cc_icon_width_mob;
       min-width: $cc_icon_width_mob;
-      border: 1px solid $cc_icon_color;
-      background-color: transparent;
+      border: $cc_icon_border;
+      border-radius: $cc_icon_bradius;
+      background-color: $cc_icon_color;
       margin-right: $cc_icon_right_mob;
       @media (min-width: 992px) {
         height: $cc_icon_height;
@@ -88,6 +93,7 @@ $csi_icon_right: 23px;
         display: block;
         width: $cc_mark_width_mob;
         height: $cc_mark_height_mob;
+        border-radius: $cc_mark_bradius;
         background-color: transparent;
         transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         @media (min-width: 992px) {
@@ -108,7 +114,7 @@ $csi_icon_right: 23px;
     &:checked + .customcheck__label {
       .customcheck__icon {
         .customcheck__mark {
-          background-color: $cc_icon_color;
+          background-color: $cc_mark_color;
         }
       }
       .customcheck__txt {
@@ -128,9 +134,9 @@ $csi_icon_right: 23px;
 .customcheck_radio-inline {
   margin: 0;
   + .customcheck_radio-inline {
-    margin: 0 0 0 63px;
+    margin: 0 0 0 17px;
     @media (min-width: 992px) {
-      margin: 0 0 0 71px;
+      margin: 0 0 0 50px;
     }
   }
 }
@@ -228,9 +234,10 @@ $csi_icon_right: 23px;
     }
 
     .customcheck__icon {
-      margin-right: $csi_icon_right_mob;
+      //margin: $cs_mark_height_mob/4 auto $csi_icon_right_mob;
+      margin: $cs_mark_height_mob/4 $csi_icon_right_mob $cs_mark_height_mob/4 0;
       @media (min-width: 992px) {
-        margin-right: $csi_icon_right;
+        margin: $cs_mark_height/4 $csi_icon_right $cs_mark_height/4 0;
       }
     }
   }
