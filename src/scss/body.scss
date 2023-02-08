@@ -47,7 +47,9 @@ body {
     }
     @media (min-width: 992px) {
       padding-top: 20px;
-      max-width: 880px;
+    }
+    @media (min-width: 1400px) {
+      max-width: 1150px;
     }
   }
 

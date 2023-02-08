@@ -59,7 +59,14 @@ if (document.querySelector('.splide_up') !== null) {
     type       : 'loop',
     arrows     : false,
     autoHeight : true,
+    autoWidth  : true,
     perPage    : 1,
+    gap        : '60px',
+    breakpoints: {
+      992: {
+        gap    : '33px',
+      },
+    },
   } ).mount();
 }
 
