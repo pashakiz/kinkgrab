@@ -76,11 +76,11 @@ if (document.querySelector('.splide_ulist') !== null) {
     arrows     : false,
     autoHeight : true,
     autoWidth  : true,
-    gap        : '60px',
+    gap        : '67px',
     //perPage    : 4,
     breakpoints: {
       992: {
-        gap    : '10px',
+        gap    : '50px',
       },
     },
   } ).mount();
@@ -92,11 +92,11 @@ if (document.querySelector('.splide_ulist-extra') !== null) {
     arrows     : false,
     autoHeight : true,
     autoWidth  : true,
-    gap        : '60px',
+    gap        : '58px',
     //perPage    : 4,
     breakpoints: {
       992: {
-        gap    : '10px',
+        gap    : '50px',
       },
     },
   } ).mount();

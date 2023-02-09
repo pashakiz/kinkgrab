@@ -1,6 +1,6 @@
 $container-xl:              1140px;
 $container-xxl:             1320px;
-$container-xxxl:            1460px;
+$container-xxxl:            1412px;
 $body_bg_color:             #1C1B1B;
 $btn_bg_color:              #F399B3;
 $btn_bg_color_hover:        #E4829F;
@@ -55,8 +55,8 @@ $textarea_border_radius_mob:0;
 
 
 //User List page wider
-/**/$user_list_item_breakpoint: 992px;
-/**/$user_list_title_color:     $font_color;
+$user_list_item_breakpoint: 992px;
+$user_list_title_color:     $font_color;
 
 /**/
 @mixin circle($diameter, $background-color) {

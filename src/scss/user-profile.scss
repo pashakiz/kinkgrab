@@ -245,32 +245,32 @@ $userprofile-img-height-lg: 382px;
   &.compatibility_list {
     .compatibility__progress {
       &.progress {
-        width: 34px;
-        height: 17px;
+        width: 57px;
+        height: 23px;
         @media (min-width: $user_list_item_breakpoint) {
-          width: 70px;
-          height: 29px;
+          width: 83px;
+          height: 33px;
         }
         .progress-bar {
-          font-size: 9px;
+          font-size: 10px;
           @media (min-width: $user_list_item_breakpoint) {
             font-size: 16px;
           }
           .progress-title {
-            top: 1px;
+            top: 4px;
             @media (min-width: $user_list_item_breakpoint) {
-              top: 0;
+              top: 4px;
             }
           }
         }
       }
     }
     .compatibility__title {
-      font-size: 7px;
-      margin-bottom: 9px;
+      font-size: 9px;
+      margin-bottom: 8px;
       @media (min-width: $user_list_item_breakpoint) {
-        font-size: 14px;
-        margin-bottom: 15px;
+        font-size: 16px;
+        margin-bottom: 17px;
       }
     }
   }
