@@ -108,10 +108,13 @@ if (document.querySelector('.splide_fback') !== null) {
     arrows     : false,
     autoHeight : true,
     autoWidth  : true,
-    gap        : '70px',
+    gap        : '120px',
     breakpoints: {
       1200: {
         gap    : '20px',
+      },
+      1650: {
+        gap    : '60px',
       },
     },
   } ).mount();
