@@ -2,12 +2,18 @@
   display: none;
 
   &.secondscreen_1 {
+    padding-top: 80px;
     @media (min-width: 992px) {
-      padding-top: 90px;
+      padding-top: 173px;
     }
   }
 
-  //&.secondscreen_2 {}
+  &.secondscreen_2 {
+    padding-top: 40px;
+    @media (min-width: 992px) {
+      padding-top: 130px;
+    }
+  }
 }
 
 .timer {
