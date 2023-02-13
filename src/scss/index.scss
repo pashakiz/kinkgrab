@@ -1,3 +1,15 @@
+.firstscreen__imgbg1 {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+.firstscreen__imgbg2 {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .secondscreen {
   display: none;
 
@@ -156,45 +168,6 @@
   }
 }
 
-.collage {
-  display: none;
-  @media (min-width: 992px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 46px 0;
-    position: relative;
-  }
-  @media (min-width: 1200px) {
-    margin: 0 0 70px 0;
-  }
-  @media (min-width: 1400px) {
-    margin: 0 0 86px 0;
-  }
-}
-
-.collage__img {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  @media (min-width: 992px) {
-    width: 280px;
-    height: 365px;
-  }
-  @media (min-width: 1200px) {
-    width: 320px;
-    height: 417px;
-  }
-  @media (min-width: 1400px) {
-    width: 365px;
-    height: 475px;
-  }
-  @media (min-width: 1650px) {
-    width: 404px;
-    height: 526px;
-  }
-}
-
 .search-progress {
   &.progress {
     width: 100%;
@@ -204,6 +177,18 @@
     position: relative;
     @media (min-width: 992px) {
       height: 50px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 360px;
+    }
+    @media (min-width: 1400px) {
+      max-width: 400px;
+    }
+    @media (min-width: 1650px) {
+      max-width: 360px;
+    }
+    @media (min-width: 1920px) {
+      max-width: 400px;
     }
   }
   .progress-bar {

@@ -160,6 +160,13 @@ h1 {
       margin: 222px 0 100px;
     }
   }
+
+  .h1_login2br {
+    display: block;
+    @media (min-width: 450px) {
+      display: none;
+    }
+  }
 }
 
 h2 {

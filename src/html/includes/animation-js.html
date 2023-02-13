@@ -9,6 +9,9 @@
       firstscreens.forEach(div => div.style.display = 'none');
       let secondscreens = document.querySelectorAll('.secondscreen');
       secondscreens.forEach(div => div.style.display = 'none');
+      let h1Titles = document.querySelectorAll('.h1-index');
+      h1Titles.forEach(div => div.style.display = 'none');
+      document.querySelector('.search-progress').style.display = 'none';
       showAreaIndex();
       initEvents();
     }
@@ -29,20 +32,25 @@
 
     function showAreaIndex() {
       document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'block';
+      document.querySelector('.firstscreen__info.firstscreen__info1 .h1-index.h1-index1').style.display = 'block';
       document.querySelector('.secondscreen.secondscreen_1').style.display = 'block';
     }
     function hideAreaIndex() {
+      document.querySelector('.firstscreen__info.firstscreen__info1 .h1-index.h1-index1').style.display = 'none';
       document.querySelector('.firstscreen__info.firstscreen__info1 .btn-index').style.display = 'none';
-      //document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'none';
-      //document.querySelector('.secondscreen.secondscreen_1').style.display = 'none';
     }
 
     function showAreaSearch() {
+      let photos = document.querySelectorAll('.firstscreen-img__photo');
+      photos.forEach(div => {
+        div.classList.remove('photo01', 'photo03', 'photo04');
+        div.classList.add('photo02');
+      });
+      document.querySelector('.firstscreen__info.firstscreen__info1 .h1-index.h1-index2').style.display = 'block';
       document.querySelector('.firstscreen__info.firstscreen__info1 .search-progress').style.display = 'block';
-      //document.querySelector('.firstscreen__info.firstscreen__info2').style.display = 'block';
-      //document.querySelector('.secondscreen.secondscreen_1').style.display = 'block';
       loading();
     }
+
     function hideAreaSearch() {
       document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'none';
       document.querySelector('.secondscreen.secondscreen_1').style.display = 'none';
@@ -62,6 +70,7 @@
     }
 
     function progressValue(progressBar, progressSpeed) {
+      let titles = document.querySelectorAll('.search-progress .search-progress__title .search-progress__span');
       let valueVisible = document.querySelector('.search-progress .search-progress__title .search-progress__value');
       let tickValue = progressBar.getAttribute('aria-valuemin');
       let endValue = progressBar.getAttribute('aria-valuemax');
@@ -70,6 +79,14 @@
           progressBar.setAttribute('aria-valuenow', tickValue);
           valueVisible.innerHTML = tickValue + ' %';
           tickValue++;
+          if(tickValue == 30) {
+                titles.forEach(title => title.style.display = 'none');
+                titles[1].style.display = 'inline';
+            }
+            if(tickValue == 70) {
+                titles.forEach(title => title.style.display = 'none');
+                titles[2].style.display = 'inline';
+            }
           if(tickValue <= endValue) {
               timerId = setTimeout(run, progressSpeed);
           }
@@ -77,10 +94,15 @@
     }
 
     function showAreaLogin() {
+      let photos = document.querySelectorAll('.firstscreen-img__photo');
+      photos.forEach(div => {
+        div.classList.remove('photo02', 'photo03', 'photo04');
+        div.classList.add('photo01');
+      });
+      document.querySelector('.firstscreen').classList.add('firstscreen_login');
       document.querySelector('.firstscreen__info.firstscreen__info2').style.display = 'block';
       document.querySelector('.secondscreen.secondscreen_2').style.display = 'block';
-      document.body.classList.remove('bg-pattern3');
-      document.body.classList.add('bg-pattern2');
+
       //setTimeout(preloaderOff, 500);
     }
 
