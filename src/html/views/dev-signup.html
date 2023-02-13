@@ -1,25 +1,42 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
-  <script>
-    document.body.classList.remove('bg-pattern3');
-    document.body.classList.add('bg-pattern2');
-  </script>
   <main class="main">
-    <header class="firstscreen">
-      <div class="firstscreen__bg"></div>
-      <div class="firstscreen__content">
-        <div class="container container_xxxl">
-          <div class="firstscreen__info firstscreen__info2" style="display: block;">
-            <div class="logo"></div>
-            <div class="row">
-              <div class="col col-lg-6 col-xxl-7 d-none d-lg-block">
-                <div class="firstscreen__img">
-                  <div class="firstscreen__img-icon"></div>
-                </div>
+    <header class="firstscreen firstscreen_login">
+      <div class="container container_xxxl firstscreen__container">
+        <div class="logo logo_main d-xl-none">
+          <div class="logo__img"></div>
+          <div class="logo__txt">KINKGRAB</div>
+        </div>
+        <div class="firstscreen-img d-none d-xl-block">
+          <div class="firstscreen-img__pic">
+            <div class="firstscreen-img__photo photo01"></div>
+          </div>
+          <div class="firstscreen-img__bg"></div>
+        </div>
+        <div class="firstscreen__info firstscreen__info2" style="display: block;">
+          <div class="row">
+            <div class="col-12 col-xl-5 col-xxl-4">
+              <div class="logo logo_main d-none d-xl-flex">
+                <div class="logo__img"></div>
+                <div class="logo__txt">KINKGRAB</div>
               </div>
-              <div class="col col-lg-6 col-xxl-5">
+              <div class="timer">
+                <div class="timer__title">Limited offer</div>
+                <div class="countdown-js" data-countdown-time="0-15-0"></div>
+              </div>
+              <div class="h1_login d-xl-none">Sign Up to unlock<br><span>your best matches</span></div>
+              <div class="h1_login d-none d-xl-block">Sign up to<br>unlock your<br>best<br>matches</div>
+            </div>
+            <div class="col-12 col-xl-7 col-xxl-8">
+              <div class="firstscreen__form">
+                <div class="firstscreen-img-wrap d-xl-none">
+                  <div class="firstscreen-img ">
+                    <div class="firstscreen-img__pic">
+                      <div class="firstscreen-img__photo photo01"></div>
+                    </div>
+                    <div class="firstscreen-img__bg"></div>
+                  </div>
+                </div>
                 <div class="firstscreen__cta">
-                  <div class="h1_login d-lg-none">Sign up<br>to unlock<br>girls</div>
-                  <div class="h1_login d-none d-lg-block">Sign up to<br><span>unlock girls</span></div>
                   <form action="">
                     <div class="form-group form-group_login">
                       <input class="form-control form-control_login" type="text" placeholder="Email">
@@ -40,10 +57,6 @@
     </header>
     <section class="secondscreen secondscreen_2" style="display: block;">
       <div class="container container_xxxl">
-        <div class="timer">
-          <div class="timer__title">Limited chance</div>
-          <div class="countdown-js" data-countdown-time="0-15-0"></div>
-        </div>
         <div class="row">
           <div class="col">
             <div class="splide splide_ulist-extra user-list-extra" aria-label="Profiles extra">

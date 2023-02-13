@@ -41,4 +41,19 @@
     }
   }
 
+  &.logo_main {
+    width: 178px;
+    margin: 45px auto 44px;
+    @media (min-width: 992px) {
+      width: 408px;
+    }
+    @media (min-width: 1200px) {
+      width: auto;
+      margin: 112px 0 70px;
+    }
+    @media (min-width: 1650px) {
+      margin: 112px 0 97px;
+    }
+  }
+
 }
