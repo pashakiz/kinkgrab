@@ -76,7 +76,7 @@ $main-img-height-xxxl: 710px;
     max-height: 600px;
     padding: 0;
     position: absolute;
-    top: $top;
+    top: 140px;
     left: auto;
     right: -27px;
   }
@@ -87,6 +87,7 @@ $main-img-height-xxxl: 710px;
     height: 670px;
     max-height: 670px;
     right: -52px;
+    top: $top;
   }
   @media (min-width: 1650px) {
     width: 1131px;
@@ -108,8 +109,30 @@ $main-img-height-xxxl: 710px;
   height: 321px;
   max-height: 321px;
   margin: 0 auto;
-  padding: 16px 0 0 0;
+  padding: 20px 0 0 0;
   position: relative;
+  left: -34px;
+  @media (min-width: 340px) {
+    left: -26px;
+  }
+  @media (min-width: 350px) {
+    left: -24px;
+  }
+  @media (min-width: 360px) {
+    left: -12px;
+  }
+  @media (min-width: 380px) {
+    left: -8px;
+  }
+  @media (min-width: 390px) {
+    left: -4px;
+  }
+  @media (min-width: 400px) {
+    left: -4px;
+  }
+  @media (min-width: 408px) {
+    left: auto;
+  }
   @include firstscreen-img-media(0);
 }
 
@@ -184,7 +207,7 @@ $main-img-height-xxxl: 710px;
   background-size: contain;
   position: absolute;
   z-index: -1;
-  top: -2px;
+  top: 3px;
   left: 0;
   transform: rotate(12deg);
   @media (min-width: 1200px) {
@@ -203,6 +226,11 @@ $main-img-height-xxxl: 710px;
   overflow: hidden;
   position: relative;
   left: -20px;
+  @media (min-width: 500px) {
+    width: 100%;
+    left: auto;
+    //overflow: auto;
+  }
 }
 
 .firstscreen_login {
